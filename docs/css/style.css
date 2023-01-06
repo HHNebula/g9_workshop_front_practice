@@ -22,3 +22,35 @@
 #main-img-box {
     position: relative;
 }
+
+.my-left-item {
+    grid-area: left;
+    height: 30vw;
+}
+
+.my-mdt-item {
+    grid-area: mid-top;
+    height: 15vw;
+}
+
+.my-rt-item {
+    grid-area: right-top;
+    height: 15vw;
+}
+
+.my-mdb-item {
+    grid-area: mid-bottom;
+    height: 15vw;
+}
+
+.my-rb-item {
+    grid-area: right-bottom;
+    height: 15vw;
+}
+
+.my-grid-container {
+    display: grid;
+    grid:
+        "left left mid-top right-top right-top"
+        "left left mid-bottom mid-bottom right-bottom";
+}
