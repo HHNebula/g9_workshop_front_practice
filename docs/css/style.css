@@ -22,3 +22,7 @@
 #main-img-box {
     position: relative;
 }
+
+a {
+    text-decoration: none;
+}
