@@ -49,20 +49,40 @@
           />
         </div>
         <div class="row justify-content-center mt-3">
-          <button>로그인</button>
+          <button class="loginbtn">로그인</button>
         </div>
         <div class="row justify-content-center mt-3">
-          <button>회원가입</button>
+          <button class="signupbtn">회원가입</button>
+        </div>
+        <div class="row mt-2">
+          <span class="d-flex justify-content-start col-5">
+            <input
+              type="checkbox"
+              name="idsave"
+              id="idsave"
+              class="saveId me-1"
+            />
+            <label for="idsave">아이디 저장</label>
+          </span>
+          <span class="d-flex justify-content-end col-7">
+            <form action="./findId.html">
+              <button class="findIdbtn">아이디 찾기</button>
+            </form>
+            <span>&nbsp|&nbsp</span>
+            <form action="">
+              <button class="findpwbtn">비밀번호 찾기</button>
+            </form>
+          </span>
         </div>
         <hr />
         <div class="row justify-content-center mt-3">
-          <div class="text-center">간편 로그인</div>
+          <div class="text-center mb-2">간편 로그인</div>
         </div>
         <div class="row justify-content-center mt-3">
-          <button>Naver 로그인</button>
+          <button class="naverLoginBtn">Naver 로그인</button>
         </div>
         <div class="row justify-content-center mt-3">
-          <button>Kakao 로그인</button>
+          <button class="kakaoLoginBtn">Kakao 로그인</button>
         </div>
       </div>
     </main>
