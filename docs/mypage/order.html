@@ -18,7 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../css/mypage/mypage.css" />
+    <link rel="stylesheet" href="../css/mypage/order.css" />
   </head>
   <body>
     <header>
@@ -161,70 +161,86 @@
         <div class="content">
           <div class="title fs-3">주문 / 배송 내역</div>
           <hr />
-          <div><button class="selectDeleteBtn">선택 삭제</button></div>
-          <table class="table text-center mt-3">
-            <thead>
-              <tr class="border-top border-bottom border-dark border-3">
-                <th><input type="checkbox" name="" id="" /></th>
-                <th>주문일자/주문번호</th>
-                <th>주문상품정보</th>
-                <th>결제금액</th>
-                <th>진행상태</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th><input type="checkbox" name="" id="" /></th>
-                <td><a href="./order.html">20230205/202302051132A23</a></td>
-                <td><a href="#">트레비 백팩</a></td>
-                <td>55000원</td>
-                <td>배송준비중</td>
-              </tr>
-              <tr>
-                <th><input type="checkbox" name="" id="" /></th>
-                <td><a href="#">20230202/202302023179A23</a></td>
-                <td><a href="#">키링</a></td>
-                <td>8000원</td>
-                <td>배송완료</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="orderStep">
-            <div class="title fs-3">STEP</div>
-            <hr />
-            <div class="orderStepList">
-              <ul class="d-flex justify-content-between">
-                <li>
-                  <i class="fa-solid fa-pen-to-square icon fa-5x"></i>
-                  주문접수
-                  <i class="fa-solid fa-arrow-right icon2 fa-2x"></i>
-                </li>
-                <li>
-                  <i class="fa-regular fa-credit-card icon3 fa-5x"></i>
-                  결제완료
-                  <i class="fa-solid fa-arrow-right icon2 fa-2x"></i>
-                </li>
-                <li>
-                  <i class="fa-solid fa-box icon4 fa-5x"></i>
 
-                  상품/배송준비중
-                  <i class="fa-solid fa-arrow-right icon5 fa-2x"></i>
-                </li>
-                <li>
-                  <i class="fa-solid fa-truck-arrow-right icon3 fa-5x"></i>
-                  배송중
-                  <i class="fa-solid fa-arrow-right icon2 fa-2x"></i>
-                </li>
-                <li>
-                  <i class="fa-solid fa-boxes-stacked icon3 fa-5x"></i>
-                  배송완료
-                </li>
-              </ul>
+          <div>
+            <table class="table text-center">
+              <thead>
+                <tr class="border-bottom border-3 border-dark">
+                  <th>주문날짜/번호</th>
+                  <th>상품정보</th>
+                  <th>판매가</th>
+                  <th>수량</th>
+                  <th>주문상태</th>
+                  <th>택배정보</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>20230205 / 202302051132A23</td>
+                  <td>트레비 백팩</td>
+                  <td>55000원</td>
+                  <td>1</td>
+                  <td>배송준비중</td>
+                  <td>
+                    <div>대한통운</div>
+                    <div><a href="#">1231231245</a></div>
+                  </td>
+                </tr>
+                <tr class="sumBorder">
+                  <td
+                    colspan="6"
+                    class="text-end bg-secondary bg-opacity-25 text-dark"
+                  >
+                    총 결제금액 : 55000원 + 배송비 2500원 =
+                    <span class="text-danger fw-bold">57500</span>원
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="title fs-3 mt-5">구매자 정보</div>
+            <hr />
+            <table class="table">
+              <tr>
+                <th class="col-4">주문하시는 분</th>
+                <td class="col-4">진보경</td>
+                <th class="col-4">이메일 주소</th>
+                <td class="col-4">user1234@gmail.com</td>
+              </tr>
+              <tr>
+                <th>휴대폰 번호</th>
+                <td colspan="3">010-1234-1234</td>
+              </tr>
+            </table>
+
+            <div class="title fs-3 mt-5">배송지 정보</div>
+            <hr />
+            <div class="d-flex justify-content-end">
+              <button class="editBtn">배송지 수정</button>
             </div>
             <div>
-              <div>주문취소는 배송준비중 단계까지 가능합니다.</div>
-              <div>
-                배송완료부터 취소/반품/교환 신청과 리뷰작성이 가능합니다.
+              <table class="table mb-5">
+                <tr>
+                  <th>받으시는 분</th>
+                  <td>진보경</td>
+                </tr>
+                <tr>
+                  <th>휴대폰 번호</th>
+                  <td>010-1234-1234</td>
+                </tr>
+                <tr>
+                  <th>주소</th>
+                  <td>
+                    [12345] 서울특별시 관악구 신림로1가길 12(신림동) 111호
+                  </td>
+                </tr>
+                <tr>
+                  <th>배송 유의사항</th>
+                  <td></td>
+                </tr>
+              </table>
+              <div class="d-flex justify-content-center mb-5">
+                <button class="checkBtn">확인</button>
               </div>
             </div>
           </div>

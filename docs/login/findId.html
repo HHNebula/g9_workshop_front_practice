@@ -25,10 +25,56 @@
     <link rel="stylesheet" href="../css/login/findId.css" />
   </head>
   <body>
+    <header>
+      <nav class="nav-justified">
+        <div class="container">
+          <div id="img-container" class="d-flex align-items-end">
+            <a href="" class="navbar-brand">
+              <img
+                src="../img/logo/G9_Logo_Black.png"
+                alt="g9_logo"
+                style="width: 15vw; margin-top: 1vw; margin-right: 1vw"
+              />
+            </a>
+            <form action="">
+              <input
+                type="search"
+                id="search"
+                name="search"
+                class="border-top-0 border-start-0 border-end-0 border-dark"
+              />
+              <button type="submit" class="border-0 bg-white">
+                <i class="bi bi-search fs-4"></i>
+              </button>
+            </form>
+          </div>
+          <div id="top-nav">
+            <div class="text-end my-1">
+              <a
+                class="text-decoration-none text-secondary"
+                href="../login/login.html"
+                >로그인</a
+              >
+              <span class="text-secondary">|</span>
+              <a
+                class="text-decoration-none text-secondary"
+                href="../signup/select_signup.html"
+                >회원가입</a
+              >
+              <span class="text-secondary">|</span>
+              <a class="text-decoration-none text-secondary" href=""
+                >고객센터</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+      <hr />
+    </header>
     <main>
       <div class="container">
-        <div class="title fs-3">아이디 찾기</div>
-        <hr />
+        <div class="title fs-3 width">아이디 찾기</div>
+        <hr class="hr" />
         <div class="d-flex row justify-content-center mt-5 mb-3">
           <input
             type="text"

@@ -15,7 +15,53 @@
     <link rel="stylesheet" href="../css/login/login.css" />
   </head>
   <body>
-    <main>
+    <header>
+      <nav class="nav-justified">
+        <div class="container">
+          <div id="img-container" class="d-flex align-items-end">
+            <a href="" class="navbar-brand">
+              <img
+                src="../img/logo/G9_Logo_Black.png"
+                alt="g9_logo"
+                style="width: 15vw; margin-top: 1vw; margin-right: 1vw"
+              />
+            </a>
+            <form action="">
+              <input
+                type="search"
+                id="search"
+                name="search"
+                class="border-top-0 border-start-0 border-end-0 border-dark"
+              />
+              <button type="submit" class="border-0 bg-white">
+                <i class="bi bi-search fs-4"></i>
+              </button>
+            </form>
+          </div>
+          <div id="top-nav">
+            <div class="text-end my-1">
+              <a
+                class="text-decoration-none text-secondary"
+                href="../login/login.html"
+                >로그인</a
+              >
+              <span class="text-secondary">|</span>
+              <a
+                class="text-decoration-none text-secondary"
+                href="../signup/select_signup.html"
+                >회원가입</a
+              >
+              <span class="text-secondary">|</span>
+              <a class="text-decoration-none text-secondary" href=""
+                >고객센터</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <hr />
+    <main class="">
       <div class="container">
         <div class="d-flex justify-content-center mt-5">
           <img src="../img/logo/G9_Logo_Black.png" class="logo" />
@@ -48,7 +94,7 @@
             <button class="signupbtn">회원가입</button>
           </div>
         </form>
-        <div class="row mt-2">
+        <div class="row mt-2 width">
           <span class="d-flex justify-content-start col-5">
             <input
               type="checkbox"
@@ -68,7 +114,8 @@
             </form>
           </span>
         </div>
-        <hr />
+        <div class="m-4"></div>
+        <hr class="hr" />
         <div class="row justify-content-center mt-3">
           <div class="text-center mb-2">간편 로그인</div>
         </div>

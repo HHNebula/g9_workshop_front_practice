@@ -92,19 +92,33 @@ hr {
   border: 0;
 }
 
+.orderStep {
+  width: 1080px;
+  height: 340px;
+  overflow: hidden;
+  margin-top: 12px;
+}
 li {
   vertical-align: top;
+  position: relative;
 }
 
-.cancelBtn {
-  background-color: black;
-  color: white;
-  width: 130px;
-  height: 30px;
+td {
+  vertical-align: middle;
 }
-.returnBtn {
+
+.sumBorder {
+  border-bottom: solid black 1px;
+}
+.editBtn {
+  width: 100px;
+  height: 40px;
+  background-color: white;
+  color: black;
+}
+.checkBtn {
+  width: 100px;
+  height: 40px;
   background-color: black;
   color: white;
-  width: 130px;
-  height: 30px;
 }

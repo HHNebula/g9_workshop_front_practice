@@ -1,6 +1,8 @@
-.container {
+.width {
   width: 500px;
+  margin: auto;
 }
+
 .logo {
   width: 300px;
   margin-top: 300px;

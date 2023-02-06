@@ -18,7 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../css/mypage/mypage.css" />
+    <link rel="stylesheet" href="../css/mypage/inquiryView.css" />
   </head>
   <body>
     <header>
@@ -159,74 +159,37 @@
         </div>
         <!-- 마이페이지 본문 -->
         <div class="content">
-          <div class="title fs-3">주문 / 배송 내역</div>
+          <div class="title fs-3">1:1 문의 내역</div>
           <hr />
-          <div><button class="selectDeleteBtn">선택 삭제</button></div>
-          <table class="table text-center mt-3">
-            <thead>
-              <tr class="border-top border-bottom border-dark border-3">
-                <th><input type="checkbox" name="" id="" /></th>
-                <th>주문일자/주문번호</th>
-                <th>주문상품정보</th>
-                <th>결제금액</th>
-                <th>진행상태</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th><input type="checkbox" name="" id="" /></th>
-                <td><a href="./order.html">20230205/202302051132A23</a></td>
-                <td><a href="#">트레비 백팩</a></td>
-                <td>55000원</td>
-                <td>배송준비중</td>
-              </tr>
-              <tr>
-                <th><input type="checkbox" name="" id="" /></th>
-                <td><a href="#">20230202/202302023179A23</a></td>
-                <td><a href="#">키링</a></td>
-                <td>8000원</td>
-                <td>배송완료</td>
-              </tr>
-            </tbody>
+          <div class="d-flex justify-content-end mt-5">
+            <button class="editBtn me-2">수정</button>
+            <button class="deleteBtn">삭제</button>
+          </div>
+          <table class="table mt-2">
+            <tr class="border-top border-3">
+              <th>주문번호</th>
+              <td>65790633234</td>
+              <th>작성일</th>
+              <td>2022.11.10</td>
+              <th>문의유형</th>
+              <td>배송문의</td>
+            </tr>
+            <tr>
+              <th>제목</th>
+              <td colspan="5">배송이 너무 느려요</td>
+            </tr>
+            <tr class="border-bottom border-3">
+              <th>내용</th>
+              <td colspan="5">
+                몇일째 배송이 오지 않았어요<br />
+                도대체 언제오는 건가요 ?<br />
+              </td>
+            </tr>
           </table>
-          <div class="orderStep">
-            <div class="title fs-3">STEP</div>
-            <hr />
-            <div class="orderStepList">
-              <ul class="d-flex justify-content-between">
-                <li>
-                  <i class="fa-solid fa-pen-to-square icon fa-5x"></i>
-                  주문접수
-                  <i class="fa-solid fa-arrow-right icon2 fa-2x"></i>
-                </li>
-                <li>
-                  <i class="fa-regular fa-credit-card icon3 fa-5x"></i>
-                  결제완료
-                  <i class="fa-solid fa-arrow-right icon2 fa-2x"></i>
-                </li>
-                <li>
-                  <i class="fa-solid fa-box icon4 fa-5x"></i>
-
-                  상품/배송준비중
-                  <i class="fa-solid fa-arrow-right icon5 fa-2x"></i>
-                </li>
-                <li>
-                  <i class="fa-solid fa-truck-arrow-right icon3 fa-5x"></i>
-                  배송중
-                  <i class="fa-solid fa-arrow-right icon2 fa-2x"></i>
-                </li>
-                <li>
-                  <i class="fa-solid fa-boxes-stacked icon3 fa-5x"></i>
-                  배송완료
-                </li>
-              </ul>
-            </div>
-            <div>
-              <div>주문취소는 배송준비중 단계까지 가능합니다.</div>
-              <div>
-                배송완료부터 취소/반품/교환 신청과 리뷰작성이 가능합니다.
-              </div>
-            </div>
+          <div class="d-flex justify-content-center">
+            <form action="./inquiryList.html">
+              <button class="checkBtn">확인</button>
+            </form>
           </div>
         </div>
       </div>
