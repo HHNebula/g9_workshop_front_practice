@@ -138,3 +138,11 @@ li {
   margin-top: -50px;
   left: 180px;
 }
+
+.selectDeleteBtn {
+  width: 120px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}

@@ -95,9 +95,41 @@ hr {
 li {
   vertical-align: top;
 }
-.inquiryBtn {
-  width: 200px;
+
+.select {
+  width: 180px;
+  height: 30px;
+}
+.phone {
+  width: 100px;
+  height: 30px;
+}
+.title {
+  width: 648px;
+  height: 30px;
+}
+.file {
+  width: 150px;
+  height: 30px;
+  background: #fff;
+  border: 1px solid rgb(77, 77, 77);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#file {
+  display: none;
+}
+.button {
   background-color: white;
-  color: black;
+  color: gray;
+}
+
+.inquiryBtn {
+  width: 100px;
   height: 40px;
+  background-color: black;
+  color: white;
+  margin-bottom: 100px;
 }
